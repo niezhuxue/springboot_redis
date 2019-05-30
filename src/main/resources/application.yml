@@ -2,6 +2,8 @@
 #访问端口
 server:
   port: 8081
+  servlet:
+    context-path: jedisDemo
 
 #redis jedis配置
 spring:
@@ -9,7 +11,7 @@ spring:
     # Redis数据库索引（默认为0）
     database: 0
     # Redis服务器地址
-    host: 172.0.0.1
+    host: 127.0.0.1
     # Redis服务器连接密码（默认为空）
     password:
     # Redis服务器连接端口
